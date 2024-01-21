@@ -18,7 +18,7 @@
         </nav>
     </header>
     <main class="main">
-        <form>
+        <form name="myForm" action="/submit" onsubmit="return validateForm()" method="post">
             <label for="fname">First Name:</label><br>
             <input type="text" id="fname" name="fname" required><br>
             <label for="lname">Last Name:</label><br>
@@ -42,4 +42,27 @@
     <footer>2024</footer>
 </div>
 </body>
+<script>
+    function validateForm() {
+  var name = document.forms["myForm"]["name"].value;
+  if (name == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  
+  var email = document.forms["myForm"]["email"].value;
+  if (email.search(/@/) == -1) {
+    alert("Invalid email address");
+    return false;
+  }
+  
+  var password = document.forms["myForm"]["password"].value;
+  if (password.length < 8) {
+    alert("Password must be at least 8 characters long");
+    return false;
+  }
+  
+  return true;
+}
+</script>
 </html>
