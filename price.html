@@ -20,36 +20,34 @@
   </head>
   <body>
     <div class="ralf">
-      <header class="nav">
-        <a class="icon-link" href="#">
-          <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-browser-chrome"
-          viewBox="0 0 16 16"
-          >
-          <path
-          fill-rule="evenodd"
-          d="M16 8a8 8 0 0 1-7.022 7.94l1.902-7.098a3 3 0 0 0 .05-1.492A3 3 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8M0 8a8 8 0 0 0 7.927 8l1.426-5.321a3 3 0 0 1-.723.255 3 3 0 0 1-1.743-.147 3 3 0 0 1-1.043-.7L.633 4.876A8 8 0 0 0 0 8m5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a3 3 0 0 0-1.252.243 2.99 2.99 0 0 0-1.81 2.59M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"
-          />
-        </svg>
-      </a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="#">Price</a>
-        <a href="#">Sweat</a>
-      </nav>
+      <header>
+        <nav class="navbar">
+          <div class="container-lg">
+            <a class="navbar-brand" href="#">
+              Bootstrap
+            </a>
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Price</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sweet</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
     </header>
     <main class="main">
-      <div class="container-lg">
+      <div class="container">
       <div class="row">
               <div class="col-md-4">
                 <div class="card  text-center" style="max-width: 20rem;">
                   <h2 class="card-title">Free</h2>
+                  <h3>$0<small>/mo</small></h3>
                   <ul class="card-list">
-                    <h3>$0<small>/mo</small></h3>
                     <li>10 users included</li>
                     <li>2 GB of storage</li>
                     <li>Email support</li>
@@ -61,8 +59,8 @@
               <div class="col-md-4">
                 <div class="card  text-center " style="max-width: 20rem;">
                   <h2 class="card-title">Pro</h2>
+                  <h3>$15<small>/mo</small></h3>
                   <ul class="card-list">
-                    <h3>$15<small>/mo</small></h3>
                     <li>20 users included</li>
                     <li>10 GB of storage</li>
                     <li>Priority email support</li>
@@ -74,8 +72,8 @@
               <div class="col-md-4">
                 <div class="card  text-center border-primary" style="max-width: 20rem;">
                   <h2 class="card-title text-bg-primary">Enterprise</h2>
+                  <h3>$29<small>/mo</small></h3>
                   <ul class="card-list">
-                    <h3>$29<small>/mo</small></h3>
                     <li>30 users included</li>
                     <li>15 GB of storage</li>
                     <li>Phone and email support</li>
@@ -84,14 +82,14 @@
                   <button type="button" class="btn btn-primary">Contact</button>
                 </div>
               </div>
-              <h2 class="text-center text-dark"><big>Compare plans</big></h2>
+              <h2 class="text-center text-dark">Compare plans</h2>
               <table class="table">
                 <thead>
                   <tr class="text-center">
                     <th scope="col"></th>
-                    <th scope="col">Free</th>
-                    <th scope="col ">Pro</th>
-                    <th scope="col ">Enterprise</th>
+                    <th class="col">Free</th>
+                    <th class="col ">Pro</th>
+                    <th class="col ">Enterprise</th>
                   </tr>
                 </thead>
                 <tbody> 
@@ -133,12 +131,12 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                        </svg>
-                    </td class="text-center">
+                    </td>
                     <td class="text-center"   >
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                        </svg>
-                    </td class="text-center">
+                    </td>
                     <td class="text-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
@@ -153,7 +151,7 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                        </svg>
-                    </td class="text-center">
+                    </td>
                     <td class="text-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
@@ -191,29 +189,39 @@
         </main>
         <footer class="footer">
         <div class="container-lg">
-          2024
-          <div class="row">
-            <div class="col-6">
+          <div class="row row-cols-auto">
+            <div class="col-12">2024
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+              <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"/>
+            </svg>
+          </div>
+            <div class="col">
               <h5>About</h5>
-              <li>Team</li>
-              <li>Locations</li>
-              <li>Privacy</li>
-              <li>Terms</li>
+              <ul>
+               <li>Team</li>
+               <li>Locations</li>
+               <li>Privacy</li>
+                <li>Terms</li>
+              </ul>
             </div>
-            <div class="col-6">
+            <div class="col">
               <h5>Resources</h5>
-              <li>Resource</li>
-              <li>Resource name</li>
-              <li>Another resource</li>
-              <li>Final resource</li>
+              <ul>
+               <li>Resource</li>
+               <li>Resource name</li>
+               <li>Another resource</li>
+               <li>Final resource</li>
+              </ul>
             </div>
-            <div class="col-6">
+            <div class="col">
               <h5>Features</h5>
-              <li>Cool stuff</li>
-              <li>Random feature</li>
-              <li>Team feature</li>
-              <li>Stuff for developers</li>
-              <li>Another one</li>
+              <ul>
+               <li>Cool stuff</li>
+                <li>Random feature</li>
+                <li>Team feature</li>
+                <li>Stuff for developers</li>
+               <li>Another one</li>
+              </ul>
             </div>
           </div>
         </div> 
